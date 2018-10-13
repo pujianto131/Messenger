@@ -5,17 +5,23 @@
  */
 package messenger.Ui;
 
+import messenger.dataAkun.Akun;
+
 /**
  *
  * @author eko
  */
 public class jInternalFrameAkun extends javax.swing.JInternalFrame {
+    Akun mAkun = new Akun();
+    
 
     /**
      * Creates new form jInternalFrameAkun
      */
     public jInternalFrameAkun() {
         initComponents();
+        this.jTextFieldAkunName.setText(mAkun.getName());
+        this.jTextFieldAkunUsrname.setText(mAkun.getUsername());
     }
 
     /**
