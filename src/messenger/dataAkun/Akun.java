@@ -6,7 +6,7 @@ package messenger.dataAkun;
  * @author eko
  */
 public class Akun {
-    public String name ="eko";
+    public String name ="Eko";
     public String username = "admin";
     public String pasword= "admin";
 
