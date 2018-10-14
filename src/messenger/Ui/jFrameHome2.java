@@ -27,27 +27,85 @@ public class jFrameHome2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFrame1 = new javax.swing.JFrame();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jDesktopPaneHome = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuProfile = new javax.swing.JMenu();
         jMenuItemAkun = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jMenuKontak = new javax.swing.JMenu();
+        jMenuItemAddKontak = new javax.swing.JMenuItem();
+        jMenuItemKontak = new javax.swing.JMenuItem();
+        jMenuOther = new javax.swing.JMenu();
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("HOME");
+
+        jPanel1.setBackground(new java.awt.Color(204, 255, 153));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setForeground(new java.awt.Color(204, 255, 153));
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("HOME");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jLabel1)
+                .addContainerGap(678, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap())
+        );
+
+        jPanel2.setBackground(new java.awt.Color(204, 255, 153));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 20, Short.MAX_VALUE)
+        );
+
+        jDesktopPaneHome.setBackground(new java.awt.Color(153, 255, 255));
+        jDesktopPaneHome.setBorder(javax.swing.BorderFactory.createCompoundBorder());
 
         javax.swing.GroupLayout jDesktopPaneHomeLayout = new javax.swing.GroupLayout(jDesktopPaneHome);
         jDesktopPaneHome.setLayout(jDesktopPaneHomeLayout);
         jDesktopPaneHomeLayout.setHorizontalGroup(
             jDesktopPaneHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 755, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jDesktopPaneHomeLayout.setVerticalGroup(
             jDesktopPaneHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 604, Short.MAX_VALUE)
+            .addGap(0, 510, Short.MAX_VALUE)
         );
-
-        getContentPane().add(jDesktopPaneHome, java.awt.BorderLayout.CENTER);
 
         jMenuProfile.setText("Profile");
 
@@ -61,19 +119,69 @@ public class jFrameHome2 extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuProfile);
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        jMenuKontak.setText("Kontak");
+
+        jMenuItemAddKontak.setText("add Kontak");
+        jMenuItemAddKontak.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemAddKontakActionPerformed(evt);
+            }
+        });
+        jMenuKontak.add(jMenuItemAddKontak);
+
+        jMenuItemKontak.setText("Kontak");
+        jMenuItemKontak.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemKontakActionPerformed(evt);
+            }
+        });
+        jMenuKontak.add(jMenuItemKontak);
+
+        jMenuBar1.add(jMenuKontak);
+
+        jMenuOther.setText("Other");
+        jMenuBar1.add(jMenuOther);
 
         setJMenuBar(jMenuBar1);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jDesktopPaneHome)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jDesktopPaneHome)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItemAkunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAkunActionPerformed
-       jInternalFrameAkun mFrameAkun = new jInternalFrameAkun();
-       mFrameAkun.setVisible(true);
-       this.jDesktopPaneHome.add(mFrameAkun);
+       jInternalFrameProfile mProfile = new jInternalFrameProfile();
+       mProfile.setVisible(true);
+       jDesktopPaneHome.add(mProfile);
     }//GEN-LAST:event_jMenuItemAkunActionPerformed
+
+    private void jMenuItemAddKontakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAddKontakActionPerformed
+      jInternalFrameAddKontak mKontak = new jInternalFrameAddKontak();
+      mKontak.setVisible(true);
+      this.jDesktopPaneHome.add(mKontak);
+    }//GEN-LAST:event_jMenuItemAddKontakActionPerformed
+
+    private void jMenuItemKontakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemKontakActionPerformed
+        jInternalFrameKontak mKontak = new jInternalFrameKontak();
+        mKontak.setVisible(true);
+        jDesktopPaneHome.add(mKontak);
+    }//GEN-LAST:event_jMenuItemKontakActionPerformed
 
     /**
      * @param args the command line arguments
@@ -112,9 +220,16 @@ public class jFrameHome2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane jDesktopPaneHome;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JFrame jFrame1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItemAddKontak;
     private javax.swing.JMenuItem jMenuItemAkun;
+    private javax.swing.JMenuItem jMenuItemKontak;
+    private javax.swing.JMenu jMenuKontak;
+    private javax.swing.JMenu jMenuOther;
     private javax.swing.JMenu jMenuProfile;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
